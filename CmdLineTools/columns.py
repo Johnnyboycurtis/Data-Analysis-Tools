@@ -29,7 +29,7 @@ def readData(data, sep, outfile, cols=None):
             recs = [str(i+1) + ':' + rec for i,rec in enumerate(recs)]
         if cols:
             ## get subset of columns
-            tmp = [col.ljust(10, " ") for i,col in enumerate(recs) if i in cols]
+            tmp = [recs[i].ljust(10, " ") for i in cols] ## get sublist of columns
             out = "\t|".join(tmp)
         else:
             out = "\t|".join([rec.ljust(10, " ") for rec in recs])

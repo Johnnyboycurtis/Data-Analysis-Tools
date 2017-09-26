@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 plt.style.use('ggplot')
 
-parser = argparse.ArgumentParser(description = "Create a histogra/barplot of values")
+parser = argparse.ArgumentParser(description = "Create a histogram/barplot of values")
 parser.add_argument('infile', nargs='?', type = argparse.FileType('r'),
         default = sys.stdin)
 parser.add_argument('outfile', nargs = '?', type = argparse.FileType('w'),
