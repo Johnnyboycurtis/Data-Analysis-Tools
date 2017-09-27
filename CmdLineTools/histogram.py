@@ -104,7 +104,7 @@ def textplot(data, outfile):
 
     ## write data out to stdout
     outputdata = list(zip(keys, bars, vals, percents))
-    outputdata.sort(key = lambda line: line[3], reverse = True)
+    #outputdata.sort(key = lambda line: line[3], reverse = True)
     for k, prop, count, percent in outputdata:
         idx = k.ljust(length, " ")
         bar = ("="  * int(prop)).ljust(50, " ")
